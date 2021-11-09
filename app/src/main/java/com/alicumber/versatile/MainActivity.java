@@ -12,6 +12,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 
+import com.alicumber.versatile.vip.InapppucharseActivity;
 import com.google.android.material.appbar.AppBarLayout;
 
 import java.util.Calendar;
@@ -65,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SlientModeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ivVip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InapppucharseActivity.class);
                 startActivity(intent);
             }
         });
