@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alicumber.versatile">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VersatilePoppy">
-
-
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -24,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".SlientModeActivity"
             android:exported="true" />
@@ -40,7 +37,9 @@
         <activity
             android:name=".TextToSpeechActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".vip.InapppucharseActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

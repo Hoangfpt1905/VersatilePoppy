@@ -21,7 +21,7 @@ import java.util.Calendar;
  */
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imagetts, imageFLL, imageWifi, ivSlient;
+    private ImageView imagetts, imageFLL, imageWifi, ivSlient, ivVip;
     private AppBarLayout appBLU;
 
 
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         imagetts = (ImageView) findViewById(R.id.iv_activity_main_iv_convert_text_to_speech);
         ivSlient = (ImageView) findViewById(R.id.iv_activity_main_iv_slient);
         imageFLL = (ImageView) findViewById(R.id.iv_activity_main_iv_flashlight);
+        ivVip = (ImageView) findViewById(R.id.iv_activity_main_iv_vip);
 
         imagetts.setOnClickListener(new View.OnClickListener() {
             @Override
